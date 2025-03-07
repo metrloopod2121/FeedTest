@@ -1,0 +1,162 @@
+[
+    {
+        "id": "E2A29F96-1F1E-4A6B-B09A-D66A5E116E70",
+        "title": "My First Post",
+        "body": "This is the body of my first post. It's a very exciting post!",
+        "avatarURL": "https://picsum.photos/100?random=1",
+        "createDate": "2025-03-01T12:00:00Z",
+        "liked": false
+    },
+    {
+        "id": "DCD56245-EDC6-4385-B5FF-12E54639F2E4",
+        "title": "Swift is awesome",
+        "body": "I just started learning Swift, and it's been an amazing journey so far!",
+        "avatarURL": "https://picsum.photos/100?random=2",
+        "createDate": "2025-03-02T14:00:00Z",
+        "liked": false
+    },
+    {
+        "id": "A09F0D97-B9A9-4D34-85C4-CC28D6F171D3",
+        "title": "Exploring Core Data",
+        "body": "Core Data is so powerful! I’m learning how to use it for local storage in my app.",
+        "avatarURL": "https://picsum.photos/100?random=3",
+        "createDate": "2025-03-03T16:30:00Z",
+        "liked": false
+    },
+    {
+        "id": "72F4CC71-AB88-45A3-88A1-3DDA9FF53D58",
+        "title": "UIKit Tips",
+        "body": "Here are some great tips on how to use UIKit effectively in your iOS apps.",
+        "avatarURL": "https://picsum.photos/100?random=4",
+        "createDate": "2025-03-04T18:45:00Z",
+        "liked": false
+    },
+    {
+        "id": "609B3F38-B92F-4D74-8581-60F87B74F9F4",
+        "title": "Design Patterns in Swift",
+        "body": "Today, I’m diving deep into design patterns like MVC and MVVM for better app architecture.",
+        "avatarURL": "https://picsum.photos/100?random=5",
+        "createDate": "2025-03-05T10:00:00Z",
+        "liked": false
+    },
+    {
+        "id": "243CA32E-53AC-4778-B662-B30B6D1D42D7",
+        "title": "New Features in iOS 16",
+        "body": "iOS 16 brought so many new features! I’m excited to try them out in my apps.",
+        "avatarURL": "https://picsum.photos/100?random=6",
+        "createDate": "2025-03-06T11:15:00Z",
+        "liked": false
+    },
+    {
+        "id": "D624B4D3-19FF-4028-A9B7-15FE1E75F91C",
+        "title": "Building Apps with SwiftUI",
+        "body": "I’m building a new app using SwiftUI, and I’m loving the declarative syntax!",
+        "avatarURL": "https://picsum.photos/100?random=7",
+        "createDate": "2025-03-07T12:30:00Z",
+        "liked": false
+    },
+    {
+        "id": "9EAEF7DC-AC49-43BB-9E4C-050EC1F6D49E",
+        "title": "Debugging in Xcode",
+        "body": "Debugging is an essential skill for every developer. Here’s how I approach debugging in Xcode.",
+        "avatarURL": "https://picsum.photos/100?random=8",
+        "createDate": "2025-03-08T13:45:00Z",
+        "liked": false
+    },
+    {
+        "id": "3DAD04AB-AEF3-42C3-8F44-1E933B258E5F",
+        "title": "Building a ToDo App",
+        "body": "I’m working on a ToDo app to practice Core Data, SwiftUI, and MVVM. It's coming together well!",
+        "avatarURL": "https://picsum.photos/100?random=9",
+        "createDate": "2025-03-09T14:00:00Z",
+        "liked": false
+    },
+    {
+        "id": "DBDA70A0-BC13-40C6-8A2F-38C9C6577F18",
+        "title": "Learning Networking in Swift",
+        "body": "Today, I’m learning how to make network requests in Swift using URLSession.",
+        "avatarURL": "https://picsum.photos/100?random=10",
+        "createDate": "2025-03-10T15:30:00Z",
+        "liked": false
+    },
+    {
+        "id": "251E0937-7059-47E5-B905-3A13E88D1D5A",
+        "title": "Creating Custom Animations",
+        "body": "I’ve been experimenting with custom animations in UIKit. It’s so much fun!",
+        "avatarURL": "https://picsum.photos/100?random=11",
+        "createDate": "2025-03-11T16:00:00Z",
+        "liked": false
+    },
+    {
+        "id": "2FF6F163-15AC-4936-89A0-9DE1F1FF08BC",
+        "title": "MVVM vs MVC",
+        "body": "Let’s discuss the differences between MVVM and MVC, and when to use each pattern.",
+        "avatarURL": "https://picsum.photos/100?random=12",
+        "createDate": "2025-03-12T17:15:00Z",
+        "liked": false
+    },
+    {
+        "id": "C8DBF5E4-B29B-4854-8F55-C9237A1C1EC5",
+        "title": "Working with TableViews",
+        "body": "TableViews are a core part of many iOS apps. Here's how I’m implementing them in my latest project.",
+        "avatarURL": "https://picsum.photos/100?random=13",
+        "createDate": "2025-03-13T18:30:00Z",
+        "liked": false
+    },
+    {
+        "id": "913D5170-5D66-4AC9-B990-74189F5014E1",
+        "title": "Understanding Auto Layout",
+        "body": "Auto Layout can be tricky, but it’s so important for making your app work across devices.",
+        "avatarURL": "https://picsum.photos/100?random=14",
+        "createDate": "2025-03-14T19:45:00Z",
+        "liked": false
+    },
+    {
+        "id": "1AA3386E-88B1-4FB1-8B61-BB347DC063EC",
+        "title": "Designing for Dark Mode",
+        "body": "Dark Mode is a great feature. Here's how I’m designing my app for both light and dark modes.",
+        "avatarURL": "https://picsum.photos/100?random=15",
+        "createDate": "2025-03-15T20:00:00Z",
+        "liked": false
+    },
+    {
+        "id": "3A22D39B-91CA-4B88-9A59-F9450B973495",
+        "title": "API Integration in iOS",
+        "body": "Today, I’m working on integrating an external API into my app. The process is smoother than I expected!",
+        "avatarURL": "https://picsum.photos/100?random=16",
+        "createDate": "2025-03-16T21:15:00Z",
+        "liked": false
+    },
+    {
+        "id": "7F9D5D61-1D57-45B3-B2A7-39BCFD2F4A6F",
+        "title": "Managing App State",
+        "body": "Managing app state with Combine and SwiftUI is really powerful and elegant.",
+        "avatarURL": "https://picsum.photos/100?random=17",
+        "createDate": "2025-03-17T22:30:00Z",
+        "liked": false
+    },
+    {
+        "id": "F43350C9-447B-41F2-B7B1-1795A9F66A63",
+        "title": "Improving App Performance",
+        "body": "I’m focusing on improving the performance of my app by optimizing table view rendering.",
+        "avatarURL": "https://picsum.photos/100?random=18",
+        "createDate": "2025-03-18T23:00:00Z",
+        "liked": false
+    },
+    {
+        "id": "9A7EBA0B-9834-4B9A-8EEC-54A746DC278B",
+        "title": "User Authentication",
+        "body": "Working on implementing user authentication with Firebase. It’s not as hard as I thought!",
+        "avatarURL": "https://picsum.photos/100?random=19",
+        "createDate": "2025-03-19T10:15:00Z",
+        "liked": false
+    },
+    {
+        "id": "F9D8385B-8A39-46F7-8D91-8BBEF7200538",
+        "title": "Creating a News Feed",
+        "body": "I'm building a news feed feature in my app, displaying posts from different users.",
+        "avatarURL": "https://picsum.photos/100?random=20",
+        "createDate": "2025-03-20T11:30:00Z",
+        "liked": false
+    }
+]
