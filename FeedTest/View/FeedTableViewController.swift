@@ -14,8 +14,8 @@ class FeedTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        storageManager.removeAllData()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TotalPostsCell")
         tableView.register(PostTableViewCell.self, forCellReuseIdentifier: "PostTableViewCell")
         loadData()
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -48,11 +48,16 @@ class FeedTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as? PostTableViewCell  else { return UITableViewCell() }
-        
         let post = posts[indexPath.row]
-        cell.configure(with: post)
         
+        if post.title == "Total Posts" {  // Проверка на ячейку с количеством постов
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TotalPostsCell", for: indexPath)
+            cell.textLabel?.text = "Total Posts: \(posts.count)" // Показать общее количество постов
+            return cell
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
+        cell.configure(with: post)
         return cell
     }
     

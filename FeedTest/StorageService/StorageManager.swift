@@ -17,7 +17,6 @@ class StorageManager: StorageManagerProtocol {
     
     private let persistenceController = PersistenceController.shared
     
-    
     func fetchData(completion: @escaping ([Post]) -> Void) {
         let context = persistenceController.context
         
@@ -35,7 +34,10 @@ class StorageManager: StorageManagerProtocol {
                          avatarURL: postEntity.avatarURL ?? "")
                 }
                 
-                
+                // Добавляем пост с количеством постов
+               let totalPosts = Post(id: UUID(), title: "Total Posts", body: "\(posts.count)", createDate: Date(), avatarURL: "")
+               let allPosts = posts + [totalPosts]
+    
                 DispatchQueue.main.async {
                     completion(posts)
                 }
@@ -48,7 +50,6 @@ class StorageManager: StorageManagerProtocol {
             }
         }
     }
-    
     
     func loadDataFromJSON(completion: @escaping () -> Void) {
         DispatchQueue.global(qos: .background).async {
@@ -80,7 +81,6 @@ class StorageManager: StorageManagerProtocol {
         }
     }
     
-    
     func savePostsToCoreData(_ posts: [Post], completion: @escaping () -> Void) {
         let context = persistenceController.context
         
@@ -105,4 +105,35 @@ class StorageManager: StorageManagerProtocol {
             }
         }
     }
+    
+    func removeAllData() {
+        let context = persistenceController.context
+    
+        
+        DispatchQueue.global(qos: .background).async {
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PostEntity")
+            
+            do {
+                // Получаем все объекты для текущей сущности
+                let objects = try context.fetch(fetchRequest)
+                
+                // Удаляем все объекты
+                for object in objects {
+                    context.delete(object as! NSManagedObject)
+                }
+                
+                // Сохраняем изменения
+                try context.save()
+            } catch {
+                print("Error deleting data for PostEntity: \(error)")
+            }
+            
+            
+            DispatchQueue.main.async {
+                print("All data removed.")
+            }
+        }
+    }
+    
 }
